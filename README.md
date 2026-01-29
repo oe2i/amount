@@ -13,6 +13,14 @@ A premium Laravel package for converting numeric amounts into words, perfectly f
 - **Short Alias**: Access via the unique `AmountX` facade.
 - **Type Safe**: Fully typed and Larastan verified.
 
+## Requirements
+
+To use this package, you must have:
+
+- **PHP**: 8.4 or higher
+- **Laravel**: 12.0 or higher
+- **PHP Extension**: `intl` (required for numeric formatting)
+
 ## Installation
 
 You can install the package via composer:
