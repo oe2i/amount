@@ -1,0 +1,10 @@
+/vendor
+/.idea
+/.vscode
+/.phpunit.cache
+/.pestphp-results
+/phpstan-baseline.neon
+.phpunit.result.cache
+.php-cs-fixer.cache
+composer.lock
+.env

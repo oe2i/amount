@@ -1,0 +1,89 @@
+{
+    "name": "oe2i/amount",
+    "description": "A Laravel package for converting numbers into words, formatted as currency amounts.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "amount",
+        "currency",
+        "number-to-words",
+        "money"
+    ],
+    "authors": [
+        {
+            "name": "OE2i Inc.",
+            "email": "hi@oe2i.com",
+            "homepage": "https://oe2i.com",
+            "role": "Organization"
+        },
+        {
+            "name": "AO",
+            "email": "ao@oe2i.com",
+            "homepage": "https://oe2i.com/ao",
+            "role": "Developer"
+        }
+    ],
+    "license": "Apache-2.0",
+    "homepage": "https://oe2i.org/packages",
+    "support": {
+        "issues": "https://github.com/oe2i/amount/issues",
+        "source": "https://github.com/oe2i/amount"
+    },
+    "require": {
+        "php": "^8.4",
+        "laravel/framework": "^12.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oe2i\\Amount\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oe2i\\Amount\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "verify": [
+            "@format",
+            "@analyse",
+            "@test",
+            "@test-coverage"
+        ],
+        "precheck": [
+            "composer validate --strict",
+            "composer audit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oe2i\\Amount\\AmountServiceProvider"
+            ],
+            "aliases": {
+                "AmountX": "Oe2i\\Amount\\Facades\\Amount"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
