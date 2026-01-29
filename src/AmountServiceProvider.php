@@ -20,7 +20,7 @@ class AmountServiceProvider extends ServiceProvider
     {
         // Bind the logic class into the container
         $this->app->singleton('amount', function () {
-            return new Amount();
+            return new Amount;
         });
     }
 

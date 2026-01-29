@@ -7,4 +7,3 @@ parameters:
         - src
     ignoreErrors:
         # Extend as needed
-    checkMissingIterableValueType: false

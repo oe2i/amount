@@ -2,8 +2,8 @@
 
 namespace Oe2i\Amount\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Oe2i\Amount\AmountServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
