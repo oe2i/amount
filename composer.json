@@ -68,9 +68,6 @@
         ]
     },
     "extra": {
-        "branch-alias": {
-            "dev-main": "0.1-dev"
-        },
         "laravel": {
             "providers": [
                 "Oe2i\\Amount\\AmountServiceProvider"
