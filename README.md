@@ -1,7 +1,7 @@
 # Amount
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/oe2i/amount.svg?style=flat-square)](https://packagist.org/packages/oe2i/amount)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/oe2i/amount/verify.yml?branch=main&label=tests&style=flat-square)](https://github.com/oe2i/amount/actions)
+[![GitHub Tests Action Status](https://github.com/oe2i/amount/actions/workflows/verify.yml/badge.svg)](https://github.com/oe2i/amount/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/oe2i/amount.svg?style=flat-square)](https://packagist.org/packages/oe2i/amount)
 
 A premium Laravel package for converting numeric amounts into words, perfectly formatted as currency. Built for accuracy, speed, and ease of use.
